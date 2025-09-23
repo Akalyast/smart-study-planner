@@ -1,0 +1,128 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #6dedde, #2185b0);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.container {
+  background: rgb(224, 243, 246);
+  padding: 20px;
+  border-radius: 15px;
+  width: 420px;
+  box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
+}
+
+h1 {
+  text-align: center;
+  color: #2193b0;
+  margin-bottom: 20px;
+}
+
+.task-input {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 15px;
+}
+
+.task-input input, .task-input button {
+  padding: 10px;
+  border-radius: 8px;
+  border: 2px solid #aed9e3;
+  outline: none;
+}
+
+.task-input input[type="text"] {
+  flex: 1;
+}
+
+.task-input input[type="date"] {
+  width: 40%;
+}
+
+.task-input button {
+  background: #2193b0;
+  color: rgb(217, 234, 238);
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.task-input button:hover {
+  background: #176682;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background: #c4d8db;
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+li.completed {
+  text-decoration: line-through;
+  background: #d4edda;
+  color: #155724;
+}
+
+li.overdue {
+  background: #f8d7da;
+  color: #721c24;
+}
+
+.task-details {
+  flex: 1;
+}
+
+.due-date {
+  font-size: 12px;
+  color: gray;
+}
+
+.progress-container {
+  margin-top: 20px;
+}
+
+.progress-bar {
+  height: 20px;
+  background: #f1f1f1;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  width: 0%;
+  background: #0f809d;
+  text-align: center;
+  color: white;
+  font-size: 12px;
+  line-height: 20px;
+  border-radius: 10px;
+}
+
+.btn-small {
+  background: red;
+  color: white;
+  border: none;
+  padding: 5px 8px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 8px;
+}
+
+.btn-small:hover {
+  background: rgb(111, 5, 5);
+}
